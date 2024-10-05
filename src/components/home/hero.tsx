@@ -2,10 +2,8 @@
 import { ChevronRight } from 'lucide-react';
 import Wrapper from '../Wrapper';
 import { Button } from '../ui/button';
-import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
-  const navigate=useNavigate()
   return (
     <Wrapper>
       <div className="flex flex-col items-center justify-center py-20 h-full w-full">
@@ -16,7 +14,7 @@ const Hero = () => {
           <p className="text-sm md:text-lg text-muted-foreground my-6 text-center">
           We provide world-class solutions across Oman, Dubai, and globally to help your business thrive.
           </p>
-          <Button className='flex items-center justify-center' onClick={()=>navigate('/services')}>Explore Our Divisions <ChevronRight className='size-5 ml-1'/> </Button>
+          <Button className='flex items-center justify-center'><a href="/services">Explore Our Divisions </a><ChevronRight className='size-5 ml-1'/> </Button>
         </div>
         <div className="relative flex items-center py-10 md:py-20 w-full">
           <div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>

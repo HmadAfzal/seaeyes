@@ -1,12 +1,10 @@
 import {  buttonVariants } from "@/components/ui/button"
-import { Link } from "react-router-dom"
-
 export default function PreFooter() {
     const profileImages = [
-        "person1.png",
-        "person2.png",
-        "person3.png",
-        "person4.png",
+        "/person1.png",
+        "/person2.png",
+        "/person3.png",
+        "/person4.png",
     ]
 
 
@@ -30,10 +28,10 @@ export default function PreFooter() {
                 <p className="text-lg text-black mb-8">
                 Get in touch with us today to discuss how SeaEyes International can help you achieve your business goals.
                 </p>
-                <Link to={'/contact'} className={buttonVariants({ variant: "default" })}>Contact Us</Link>
+                <a href={'/contact'} className={buttonVariants({ variant: "default" })}>Contact Us</a>
                 
             </div>
-            <div className="absolute left-0 bottom-0 w-full h-full opacity-10">
+            <div className="absolute bg-black/50 left-0 bottom-0 w-full h-full opacity-10">
                 <svg
                     viewBox="0 0 100 100"
                     preserveAspectRatio="none"

@@ -15,6 +15,7 @@ import {
   Truck,
   ParkingMeter,
   Home,
+  Stamp, Plane, Award, Scale, ShieldCheck
 } from "lucide-react";
 
 export const qualities = [
@@ -51,48 +52,49 @@ export const qualities = [
 ];
 
 
+
 export const divisions = [
   {
-    slug: "business-visa-immigration",
-    icon: Briefcase,
-    title: "Business & Visa Immigration Consultancy",
-    description:
-      "End-to-end consultancy for business setup, visa & immigration, and legal documentation to help businesses expand globally.",
+    slug: "business-formation",
+    icon: FileText,
+    title: "Business Formation",
+    description: "Simplified solutions for company registration, licensing, and compliance.",
     cta: "Learn More",
-    imageUrl:"business.jpg"
-
+    imageUrl: "business.jpg"
+  },
+  {
+    slug: "visa-immigration",
+    icon: Briefcase,
+    title: "Visa & Immigration Consultancy",
+    description: "Expert guidance to help you navigate visa and immigration processes.",
+    cta: "Explore More",
+    imageUrl: "visa.jpg"
   },
   {
     slug: "seafood",
     icon: Fish,
     title: "Seafood Division",
-    description:
-      "Providing fresh, sustainably sourced seafood to wholesalers, hotels, and retailers.",
+    description: "High-quality, sustainably sourced seafood for wholesale supply.",
     cta: "Explore More",
-    imageUrl:"seafood.jpg"
-
+    imageUrl: "seafood.jpg"
   },
   {
     slug: "autoparts",
     icon: Cog,
     title: "Auto Parts & Lubricants Supplier",
-    description:
-      "High-quality auto parts and lubricants for industrial and commercial vehicles.",
+    description: "Supplying high-performance auto parts and lubricants for commercial and industrial vehicles.",
     cta: "View Products",
-    imageUrl:"autoparts.jpg"
-
+    imageUrl: "autoparts.jpg"
   },
   {
     slug: "construction",
     icon: Building,
     title: "Construction Division",
-    description:
-      "Delivering quality residential and commercial construction projects with precision and on time.",
+    description: "End-to-end construction management services for residential and commercial projects.",
     cta: "Our Projects",
-    imageUrl:"construction.jpg"
-
-  },
-];
+    imageUrl: "construction.jpg"
+  }
+]
 
 export const features = [
   {
@@ -140,41 +142,6 @@ export const values = [
   },
 ];
 
-export const 
-services = [
-  {slug:'business-visa-immigration',
-    title: "Business & Visa Immigration Consultancy",
-    description:
-      "Helping businesses with registration, visa processes, and legal documentation, ensuring a seamless global expansion.",
-    cta: "Learn More",
-    icon: Briefcase,
-    imageUrl:"business.jpg"
-  },
-  {slug:'seafood',
-    title: "Seafood Division",
-    description:
-      "Providing fresh, sustainable seafood to the hospitality and retail sectors.",
-    cta: "Explore More",
-    icon: Fish,
-    imageUrl:"seafood.jpg"
-  },
-  {slug:'autoparts',
-    title: "Auto Parts & Lubricants Supplier",
-    description:
-      "Offering reliable auto parts and lubricants for industrial and commercial use.",
-    cta: "View Products",
-    icon: Cog,
-    imageUrl:"autoparts.jpg"
-  },
-  {slug:'construction',
-    title: "Construction Division",
-    description:
-      "Specializing in residential and commercial construction, with a focus on quality and efficiency.",
-    cta: "Our Projects",
-    icon: Building,
-    imageUrl:"construction.jpg"
-  },
-];
 
 export const Businessservices = [
   {
@@ -247,51 +214,139 @@ export const Businessservices = [
     ],
   },
 ];
+
 export const servicesDivisions = {
+  "business-formation": [
+    {
+      title: "Company Registration",
+      description: "Guidance through company registration, ensuring compliance with local regulations.",
+      icon: FileText,
+    },
+    {
+      title: "Licensing & Permits",
+      description: "Assistance with obtaining necessary licenses for your business operations.",
+      icon: Stamp,
+    },
+    {
+      title: "Business Planning",
+      description: "Strategic business planning and operational setup for long-term success.",
+      icon: Briefcase,
+    },
+    {
+      title: "Local Sponsorship",
+      description: "Secure local sponsorship for foreign entrepreneurs in compliance with regional laws.",
+      icon: Users,
+    },
+  ],
+  "visa-immigration": [
+    {
+      title: "Work Visas",
+      description: "Assistance with obtaining work visas for professionals.",
+      icon: Briefcase,
+    },
+    {
+      title: "Residency Permits",
+      description: "Help with securing residency permits for individuals and families.",
+      icon: Home,
+    },
+    {
+      title: "Family Visa Applications",
+      description: "Visa services for dependents and family members.",
+      icon: Users,
+    },
+    {
+      title: "Investor Visas",
+      description: "Guidance on securing visas for business owners and investors.",
+      icon: Award,
+    },
+    {
+      title: "Citizenship & Permanent Residency",
+      description: "Consultation for citizenship or permanent residency options.",
+      icon: Plane,
+    },
+  ],
   seafood: [
     {
-      title: "Sustainable Sourcing",
-      description:
-        "We source fresh, sustainably harvested seafood from local and international suppliers, ensuring high quality for our clients.",
+      title: "Sustainable Seafood Sourcing",
+      description: "Responsibly sourced seafood from local and international waters.",
       icon: Fish,
     },
     {
       title: "Wholesale Supply",
-      description:
-        "Supplying seafood in bulk to wholesalers, restaurants, and hotels with flexible delivery schedules to meet your business needs.",
+      description: "Bulk orders of fresh and frozen seafood to meet business needs.",
       icon: Truck,
+    },
+    {
+      title: "Packaging & Distribution",
+      description: "Specialized packaging services for secure and efficient transport.",
+      icon: ParkingMeter,
+    },
+    {
+      title: "Quality Assurance",
+      description: "Ensuring all seafood meets the highest safety and quality standards.",
+      icon: ShieldCheck,
+    },
+    {
+      title: "Export & Import Services",
+      description: "Handling logistics for international seafood trade, including customs and shipping.",
+      icon: Plane,
     },
   ],
   autoparts: [
     {
-      title: "Engine Parts",
-      description:
-        "Supplying high-quality engine parts for industrial and commercial vehicles, ensuring performance and reliability.",
+      title: "Engine Parts Supply",
+      description: "Durable and reliable engine parts for heavy-duty vehicles.",
       icon: Cog,
     },
     {
-      title: "Lubricants",
-      description:
-        "We provide premium lubricants for engines and machinery, ensuring smooth operation and longevity.",
+      title: "Brake Systems",
+      description: "High-quality brake components that meet stringent safety standards.",
       icon: ParkingMeter,
+    },
+    {
+      title: "Lubricants & Oils",
+      description: "Premium lubricants and transmission fluids for enhanced vehicle performance.",
+      icon: Truck,
+    },
+    {
+      title: "Vehicle Accessories",
+      description: "A wide range of vehicle accessories for both personal and commercial use.",
+      icon: Cog,
+    },
+    {
+      title: "Maintenance Consultation",
+      description: "Expert vehicle maintenance advice to extend the lifespan of your fleet.",
+      icon: Briefcase,
     },
   ],
   construction: [
     {
       title: "Residential Construction",
-      description:
-        "We offer end-to-end residential construction services, from design and planning to full project management and delivery.",
+      description: "Custom home building services with modern design and architecture.",
       icon: Home,
     },
     {
       title: "Commercial Construction",
-      description:
-        "Specializing in commercial construction projects, including office buildings, retail centers, and industrial facilities.",
+      description: "Office, retail, and industrial construction services with end-to-end project management.",
       icon: Building,
+    },
+    {
+      title: "Renovation & Remodeling",
+      description: "Transforming outdated spaces into modern environments with interior and exterior renovation services.",
+      icon: Cog,
+    },
+    {
+      title: "Project Management",
+      description: "Complete project coordination, from procurement to completion, ensuring quality and timeliness.",
+      icon: Briefcase,
+    },
+    {
+      title: "Turnkey Construction Solutions",
+      description: "Ready-to-use spaces delivered with high-quality standards for residential and commercial projects.",
+      icon: Scale,
     },
   ],
 };
-
 
 
 

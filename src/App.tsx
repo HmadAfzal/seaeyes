@@ -5,7 +5,6 @@ import About from './pages/About';
 import Services from './pages/Services';
 import FAQPage from './pages/Faq';
 import Contact from './pages/Contact';
-import BusinessVisaImmigration from './pages/Business-visa-immigration';
 import Subservice from './pages/Subservice';
 import Privacy from './pages/Privacy';
 import TermsAndConditions from './pages/Terms';
@@ -23,7 +22,6 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/service/business-visa-immigration" element={<BusinessVisaImmigration />} />
         <Route path="/service/:slug" element={<Subservice />} />
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/privacy" element={<Privacy />} />

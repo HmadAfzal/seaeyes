@@ -1,6 +1,6 @@
 import Cta from "@/components/cta"
 import DivisionsCard from "@/components/divisions-card"
-import { services } from "@/constants"
+import { divisions } from "@/constants"
 
 export default function Services() {
 
@@ -16,7 +16,7 @@ export default function Services() {
       </section>
 
       <section className="grid gap-8 md:grid-cols-2">
-        {services.map((service, index) => (
+        {divisions.map((service, index) => (
           <DivisionsCard key={index} division={service} />
         ))}
       </section>

@@ -1,7 +1,6 @@
 import {buttonVariants } from "@/components/ui/button"
 import { features } from "@/constants"
 import AboutusCard from "../aboutus-card"
-import { Link } from "react-router-dom"
 
 export default function AboutusSection() {
 
@@ -50,7 +49,7 @@ export default function AboutusSection() {
             <p className="text-lg text-muted-foreground">
               Take the next step towards global success. Our team of experts is ready to provide you with personalized solutions tailored to your business needs.
             </p>
-            <Link to={'/contact'} className={buttonVariants({ variant: "default" })}>Get in touch</Link>
+            <a href={'/contact'} className={buttonVariants({ variant: "default" })}>Get in touch</a>
 
           </div>
           <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl">

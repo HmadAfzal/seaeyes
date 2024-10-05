@@ -1,6 +1,5 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { useNavigate } from "react-router-dom"
 
 interface Division {
   icon: React.ElementType;
@@ -12,7 +11,6 @@ interface Division {
 }
 
 const DivisionsCard = ({ division }: { division: Division }) => {
-  const navigate = useNavigate()
 
   return (
     <Card className="flex flex-col overflow-hidden">
@@ -36,13 +34,10 @@ const DivisionsCard = ({ division }: { division: Division }) => {
         <p className="text-sm text-muted-foreground">{division.description}</p>
       </CardContent>
       <CardFooter>
-        <Button 
-          variant="secondary" 
-          onClick={() => navigate(`/service/${division.slug}`)} 
-          className="w-full"
-        >
-          {division.cta}
-        </Button>
+       <a className="w-full" href={`/service/${division.slug}`}> 
+        <Button  variant="secondary" className="w-full">
+         {division.cta}
+        </Button></a>
       </CardFooter>
     </Card>
   )
