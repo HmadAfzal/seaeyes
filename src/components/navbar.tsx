@@ -40,10 +40,12 @@ const Navbar: React.FC = () => {
 
   const serviceItems: NavItem[] = [
     { name: 'All Services', href: '/services' },
-    { name: 'Business & Visa Immigration', href: '/service/business-visa-immigration' },
     { name: 'Seafood', href: '/service/seafood' },
     { name: 'Autoparts & Lubricants', href: '/service/autoparts' },
     { name: 'Construction', href: '/service/construction' },
+    { name: 'Business formation', href: '/service/business-formation' },
+    { name: 'Visa and immigration', href: '/service/visa-immigration' },
+
   ]
 
   useEffect(() => {
