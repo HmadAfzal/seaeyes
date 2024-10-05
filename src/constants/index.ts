@@ -17,63 +17,36 @@ import {
   Home,
 } from "lucide-react";
 
-export const companies = [
+export const qualities = [
   {
-    title: "Google",
+    title: "Efficiency",
   },
   {
-    title: "Microsoft",
+    title: "Growth",
   },
   {
-    title: "Amazon",
+    title: "Precision",
   },
   {
-    title: "Facebook",
+    title: "Quality",
   },
   {
-    title: "Apple",
+    title: "Reliability",
   },
   {
-    title: "Netflix",
+    title: "Strategy",
   },
   {
-    title: "Tesla",
+    title: "Sustainability",
   },
   {
-    title: "Spotify",
+    title: "Partnership",
   },
   {
-    title: "Uber",
+    title: "Security",
   },
   {
-    title: "Airbnb",
-  },
-  {
-    title: "GitHub",
-  },
-  {
-    title: "Slack",
-  },
-  {
-    title: "PayPal",
-  },
-  {
-    title: "IBM",
-  },
-  {
-    title: "Oracle",
-  },
-  {
-    title: "Salesforce",
-  },
-  {
-    title: "Adobe",
-  },
-  {
-    title: "Intel",
-  },
-  {
-    title: "Zoom",
+    title: "Excellence",
   },
 ];
 
@@ -86,6 +59,8 @@ export const divisions = [
     description:
       "End-to-end consultancy for business setup, visa & immigration, and legal documentation to help businesses expand globally.",
     cta: "Learn More",
+    imageUrl:"business.jpg"
+
   },
   {
     slug: "seafood",
@@ -94,6 +69,8 @@ export const divisions = [
     description:
       "Providing fresh, sustainably sourced seafood to wholesalers, hotels, and retailers.",
     cta: "Explore More",
+    imageUrl:"seafood.jpg"
+
   },
   {
     slug: "autoparts",
@@ -102,6 +79,8 @@ export const divisions = [
     description:
       "High-quality auto parts and lubricants for industrial and commercial vehicles.",
     cta: "View Products",
+    imageUrl:"autoparts.jpg"
+
   },
   {
     slug: "construction",
@@ -110,6 +89,8 @@ export const divisions = [
     description:
       "Delivering quality residential and commercial construction projects with precision and on time.",
     cta: "Our Projects",
+    imageUrl:"construction.jpg"
+
   },
 ];
 
@@ -159,13 +140,15 @@ export const values = [
   },
 ];
 
-export const services = [
+export const 
+services = [
   {slug:'business-visa-immigration',
     title: "Business & Visa Immigration Consultancy",
     description:
       "Helping businesses with registration, visa processes, and legal documentation, ensuring a seamless global expansion.",
     cta: "Learn More",
     icon: Briefcase,
+    imageUrl:"business.jpg"
   },
   {slug:'seafood',
     title: "Seafood Division",
@@ -173,6 +156,7 @@ export const services = [
       "Providing fresh, sustainable seafood to the hospitality and retail sectors.",
     cta: "Explore More",
     icon: Fish,
+    imageUrl:"seafood.jpg"
   },
   {slug:'autoparts',
     title: "Auto Parts & Lubricants Supplier",
@@ -180,6 +164,7 @@ export const services = [
       "Offering reliable auto parts and lubricants for industrial and commercial use.",
     cta: "View Products",
     icon: Cog,
+    imageUrl:"autoparts.jpg"
   },
   {slug:'construction',
     title: "Construction Division",
@@ -187,6 +172,7 @@ export const services = [
       "Specializing in residential and commercial construction, with a focus on quality and efficiency.",
     cta: "Our Projects",
     icon: Building,
+    imageUrl:"construction.jpg"
   },
 ];
 
@@ -261,31 +247,6 @@ export const Businessservices = [
     ],
   },
 ];
-
-//   Seafood Division - Sub-Services Page
-// Sustainable Sourcing
-// Content:
-// "We source fresh, sustainably harvested seafood from local and international suppliers, ensuring high quality for our clients."
-// Wholesale Supply
-// Content:
-// "Supplying seafood in bulk to wholesalers, restaurants, and hotels with flexible delivery schedules to meet your business needs."
-
-// 6. Auto Parts & Lubricants - Sub-Services Page
-// Engine Parts
-// Content:
-// "Supplying high-quality engine parts for industrial and commercial vehicles, ensuring performance and reliability."
-// Lubricants
-// Content:
-// "We provide premium lubricants for engines and machinery, ensuring smooth operation and longevity."
-
-// 7. Construction Division - Sub-Services Page
-// Residential Construction
-// Content:
-// "We offer end-to-end residential construction services, from design and planning to full project management and delivery."
-// Commercial Construction
-// Content:
-// "Specializing in commercial construction projects, including office buildings, retail centers, and industrial facilities."
-
 export const servicesDivisions = {
   seafood: [
     {
@@ -330,3 +291,88 @@ export const servicesDivisions = {
     },
   ],
 };
+
+
+
+
+
+export const faqCategories = [
+  {
+    title: "General FAQs",
+    faqs: [
+      {
+        question: "What services does SeaEyes International offer?",
+        answer: "We're your one-stop solution for business formation, visa & immigration consultancy, seafood sourcing, auto parts & lubricants supply, and construction project management. Whatever your business needs, we've got you covered!"
+      },
+      {
+        question: "How can I get in touch with SeaEyes International?",
+        answer: "We'd love to hear from you! Reach us at info@seaeyesintl.com or give us a call at +968 9485 0208. Let's talk business!"
+      }
+    ]
+  },
+  {
+    title: "Business Formation FAQs",
+    faqs: [
+      {
+        question: "Can SeaEyes help me start my company?",
+        answer: "We simplify the entire company registration process, taking care of licenses and compliance, so you can focus on growing your business."
+      },
+      {
+        question: "Do I need a local sponsor to set up a business in the UAE?",
+        answer: "In many cases, yes. But don't worry, we provide trusted local sponsorship to help you get started without the hassle!"
+      }
+    ]
+  },
+  {
+    title: "Visa & Immigration Consultancy FAQs",
+    faqs: [
+      {
+        question: "What visa services does SeaEyes provide?",
+        answer: "Whether you're looking for a work visa, investor visa, family visa, or residency permit, we're here to make the process smooth and stress-free."
+      },
+      {
+        question: "How long will it take to process my visa?",
+        answer: "It depends on the visa type, but with us handling the paperwork, we aim to get you through the process quickly and efficiently."
+      }
+    ]
+  },
+  {
+    title: "Seafood Division FAQs",
+    faqs: [
+      {
+        question: "Is your seafood sustainably sourced?",
+        answer: "Yes! We're passionate about protecting the ocean, and all our seafood comes from eco-friendly, sustainable fisheries. Fresh, tasty, and good for the planet."
+      },
+      {
+        question: "Who do you supply seafood to?",
+        answer: "We supply top-quality seafood to hotels, restaurants, wholesalers, and businesses that need the freshest catch. Let us deliver straight to your kitchen!"
+      }
+    ]
+  },
+  {
+    title: "Auto Parts & Lubricants FAQs",
+    faqs: [
+      {
+        question: "What kind of auto parts do you provide?",
+        answer: "From engine parts to brake systems, lubricants, and more, we keep your vehicles running smoothly with top-quality components."
+      },
+      {
+        question: "Can you help with fleet maintenance advice?",
+        answer: "You bet! Our experts can guide you on the best maintenance practices to keep your fleet in peak condition and avoid unnecessary downtime."
+      }
+    ]
+  },
+  {
+    title: "Construction Division FAQs",
+    faqs: [
+      {
+        question: "What construction services does SeaEyes offer?",
+        answer: "We handle everything from custom home builds to large-scale commercial projects. If you can dream it, we can build it!"
+      },
+      {
+        question: "Do you provide project management for construction?",
+        answer: "We oversee every step, from planning to completion, ensuring your project stays on time and within budget."
+      }
+    ]
+  }
+]

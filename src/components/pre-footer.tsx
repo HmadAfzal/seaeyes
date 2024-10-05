@@ -26,11 +26,11 @@ export default function PreFooter() {
                         </div>
                     ))}
                 </div>
-                <h2 className="text-3xl md:text-4xl text-black font-bold mb-4">Need any further assistance?</h2>
+                <h2 className="text-3xl md:text-4xl text-black font-bold mb-4">Ready to Grow Your Business?                </h2>
                 <p className="text-lg text-black mb-8">
-                    Feel free to reach out for any inquiries or assistance.
+                Get in touch with us today to discuss how SeaEyes International can help you achieve your business goals.
                 </p>
-                <Link to={'/contact'} className={buttonVariants({ variant: "default" })}>Book an appointment now</Link>
+                <Link to={'/contact'} className={buttonVariants({ variant: "default" })}>Contact Us</Link>
                 
             </div>
             <div className="absolute left-0 bottom-0 w-full h-full opacity-10">

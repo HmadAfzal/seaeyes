@@ -6,7 +6,7 @@ export default function Leadership() {
     <div className="container px-4 md:px-6">
       <div className="flex flex-col items-center text-center space-y-4 mb-12">
         <h2 className="text-4xl font-extrabold tracking-tight text-primary">
-          Meet Our Visionary Leader
+          Meet Our CEO
         </h2>
         <p className="max-w-[700px] text-lg text-muted-foreground">
           Guiding Sea Eyes International towards new horizons
@@ -27,9 +27,10 @@ export default function Leadership() {
               </div>
               <div className="lg:w-3/5 p-8 lg:p-12 flex items-center bg-card">
                 <div>
-                  <h3 className="text-3xl font-bold mb-4 text-card-foreground">CEO Name</h3>
+                  <h3 className="text-3xl font-bold mb-4 text-card-foreground">Shakeel Shaukat Ali 
+                  </h3>
                   <p className="text-xl text-card-foreground/80 leading-relaxed">
-                  [CEO Name] has [X] years of experience leading Sea Eyes International through global expansion, helping hundreds of businesses succeed across multiple industries.
+                  Shakeel Shaukat Ali is the driving force behind SeaEyes International, leading the company with a focus on innovation and global business growth. With a strategic vision, he ensures seamless service delivery across business formation, immigration consultancy, seafood sourcing, auto parts supply, and construction, making SeaEyes a trusted partner for businesses worldwide.
                   </p>
                   <div className="mt-8 flex items-center space-x-4">
                     <div className="h-px flex-1 bg-border" />

@@ -45,7 +45,7 @@ export default function AboutusSection() {
         <div className="relative grid md:grid-cols-2 gap-8 items-center p-8 md:p-12 rounded-lg">
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              Ready to Grow Your Business?
+             Have any queries?
             </h2>
             <p className="text-lg text-muted-foreground">
               Take the next step towards global success. Our team of experts is ready to provide you with personalized solutions tailored to your business needs.
